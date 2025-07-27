@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<input type="text" id="searchInput" placeholder=""> 
+             
+    <title>Document</title>
+</head>
+<body>
+     <ul>
+            <li>1-MISS DIOR</li>    
+              <li>2-DIOR</li
+          
+                <li>6-ROSE</li>
+                <li>7-COLOMBE</li>
+              <li> 8-VALENTINO</li>
+              <li> 9-YVS</li>
+              <li> 10-WEI</li>
+                <li>11-ROJA</li>
+              <li> 12-CHEVALIER</li>
+              <Li>  13-CHANNEL</Li>
+              <Li> 14-CLARINS</Li>
+              <Li> 15-1 MILLION</Li>
+              <li> 4-FLEUR</li>
+                </ul>
+                <SCript>
+                  document.getElementById("searchInput").addEventListener("keyup",function(){
+                    let val=this.value.tolowercase();let items=document.queryselectorall("#productlist li");
+                    items.forEach(item => {let txt =
+                      item.textcontent.tolowercase();
+                      if (txt.includes(val)){
+                        item.style.display="none";
+                      
+                      }
+                      
+                    });
+                  });
+                </SCript>, initial-scale=1.0"> 
+</body>
+</html>

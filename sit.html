@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .fon{
+        background-color: black;
+        width: 2000px;
+        height: 1000px;
+        flex: 1px;
+       
+    }
+    .anle{
+        background-color: antiquewhite;
+        height: 85px;
+        width: 2000px;
+        padding-left: 50px;
+        padding-top: 20px;
+        display: flex;
+        flex: 1px;
+    }
+    .logo{
+        background-color: aqua;
+        height: 80px;
+        width: 150px;
+    }
+    .imjlogo{
+         height: 80px;
+        width: 150px;
+    }
+    .rantre{
+        background-color: azure;
+        border-radius: 50px;
+        height: 30px;
+        width: 600px;
+        margin-left: 100px;
+        text-align: center;
+
+    }
+    .rantre:hover{
+        background-color: beige;
+        cursor: pointer;
+    }
+    .notif{
+        background-color: aqua;
+        height: 35px;
+        width: 35px;
+        margin-left: 100px;
+    }
+    .b{
+      height: 35px;
+        width: 35px;   
+    }
+    .commande{
+        height: 35px;
+        width: 35px; 
+        background-color: black; 
+        margin-left: 10px;
+    }
+    .imjcom{
+         height: 35px;
+        width: 35px; 
+    }
+    .panier{
+      height: 40px;
+        width: 40px;   
+         background-color: aquamarine; 
+         margin-left: 10px;
+    }
+    .imjpanier{
+       
+height: 40px;
+        width: 40px;    
+    }
+    .btnpan{
+        background-color: black;
+        height: 20px;
+        width: 100px;
+        color: aliceblue;
+    }
+    .btncom{
+        background-color: antiquewhite;
+         height: 20px;
+        width: 100px;
+    }
+    .btncom:hover{
+        background-color: aqua;
+        cursor: pointer;
+    }
+    .btnpan:hover{
+         background-color: rgb(29, 102, 102);
+        cursor: pointer;
+    }
+    .btnlog{
+        background-color: aliceblue;
+        width: 80px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 15px;
+    }
+    .btnlog:hover{
+        background-color: rgb(107, 171, 182);
+        cursor: pointer;
+    }
+    .btnsign{
+        background-color: aliceblue;
+        width: 80px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 15px; 
+    }
+    .btnsign:hover{
+        background-color: aqua;
+        cursor: pointer;
+    }
+    .twapwen{
+        background-color: bisque;
+        height: 20px;
+        width: 20px;
+        margin-left: 20px;
+    }
+    .gh{
+        height: 20px;
+        width: 20px;
+    }
+    .anba{
+        background-color: aliceblue;
+        height: 500px;
+        width: 2000px;
+        padding-left: 20px;
+        padding-top: 10px;
+        display: flex;
+        gap: 20PX;  
+
+    }
+    .PRODUI{
+        background-color: rgb(243, 243, 243);
+        height: 450px;
+        width: 300px;
+    }
+    .imjprodui{
+        background-color: black;
+         height: 300px;
+        width: 300px;
+    }
+    .paragraf{
+        height: 100px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        font-size: small;
+        padding-bottom: 20px;
+    }
+    .imjcha{
+        height: 300px;
+        width: 300px; 
+    }
+    .mitan{
+        background-color: rgb(47, 105, 156);
+        width: 2000px;
+        height: 400p;
+    }
+    .anbanle{
+        background-color: rgb(158, 158, 158);
+        height: 25px;
+        width: 2000px;
+        display: flex;
+        text-align: center;
+        padding-left: 600px;
+        font-size: small;
+    }
+    .homme{
+        background-color: black;
+        height: 10px;
+        width: 20px;
+        margin-left: 100px;
+    }
+    .imjhom{
+        height: 20px;
+        width: 20px; 
+    }
+    .femme{
+        background-color: aqua;
+         height: 10px;
+        width: 20px;
+         margin-left: 100px;
+    }
+    .enfant{
+        background-color: bisque;
+         height: 10px;
+        width: 20px;
+         margin-left: 100px;
+    }
+    .imjenf{
+ height: 10px;
+        width: 20px;
+    }
+    .imjfem{
+      height: 10px;
+        width: 20px;  
+    }
+    .BTN{
+        background-color: aliceblue;
+        height: 19px;
+        width: 80px;
+        border: none;
+    }
+    .BTN:hover{
+        background-color: rgb(92, 53, 53);
+        cursor: pointer;
+    }
+    .ach{
+      background-color:white;
+      height: 15px;
+      width: 100px;
+      border: 5px;
+      margin-left: 150px;
+      margin-bottom: 40px;
+    
+    }
+    .ach:hover{
+      background-color: rgb(163, 168, 168);
+      cursor: pointer;
+    }
+
+
+
+</style>
+<body>
+   <div class="fon">
+       <div class="anle">
+           <div class="logo">
+            <img class="imjlogo" src="logo.png" alt=""></div>
+             <p>WEITTY'S PARFUM</p>
+               <input class="rantre" type="text" placeholder="RECHERCHE">
+               
+
+               <div class="notif">
+                <img class="b" src="nof.png" alt="">
+               </div>
+               <div class="commande">
+                <img class="imjcom" src="commande.png" alt="">
+               </div>
+               <a href="commande.html"><BUtton class="btncom">COMMANDE</BUtton></a>
+               <div class="panier">
+                <img class="imjpanier" src="panier.png" alt="">
+               </div>
+               <button class="btnpan">PANIER</button>
+               <button class="btnlog">LOG IN</button>
+               <button class="btnsign">SIGN UP</button>
+               <div class="twapwen">
+                <img class="gh" src="twapwen.png" alt="">
+               </div>
+       </div>
+           <DIV class="anbanle">
+               <div class="homme">
+                <img class="imjhom" src="homme.png" alt="">
+               </div>
+               <a href="homme.html"><button class="BTN">HOMME</button></a>
+               <div class="femme">
+                <img class="imjfem" src="femme.png" alt="">
+               </div>
+               <a href="femme.html"><button class="BTN">FEMME</button></a>
+               <div class="enfant">
+                <img class="imjenf" src="enfant.png" alt="">
+               </div>
+               <a href="ENFANT.HTML"><button class="BTN">ENFANT</button></a>
+           </DIV>
+
+
+
+
+       <div  class="anba">
+          <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="chanel.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>CHANEL</p>
+                <P>PRIX:120$</P>              
+             <P>#USSD#/HTTPS/WEITT/homme</P>
+             <button class="ach">Achat en ligne</button>
+             
+            </div>
+           </Div>
+           <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="chevalier.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>CHEVALIER</p>
+                <P>PRIX:120$</P>
+          <P>#USSD#/HTTPS/WEITT/femme</P>
+           <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+           <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="diesel.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>DIESEL</p>
+                <P>PRIX:180$</P>
+            <P>#USSD#/HTTPS/WEITT/homme</P>
+             <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+          
+            <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="MISS DIOR.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>MISS DIOR</p>
+                <P>PRIX:150$</P>
+               <P>#USSD#/HTTPS/WEITT/femme</P>
+                <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+            <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="savage.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>savage</p>
+                <P>PRIX:120$</P>
+              <P>#USSD#/HTTPS/WEITT/homme</P>
+               <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+            <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="dior.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>DIOR</p>
+                <P>PRIX:120$</P>
+              <P>#USSD#/HTTPS/WEITT/femme</P>
+               <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+                
+           
+       </div>
+
+       <div  class="anba">
+          <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="YVS.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>YVE SAINT LAURENT</p>
+                <P>PRIX:200$</P>
+                <P>#USSD#/HTTPS/WEITT/homme/femme</P>
+                 <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+           <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="Fleur.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>FLEUR</p>
+                <P>PRIX:300$</P>
+              <P>#USSD#/HTTPS/WEITT/femme</P>
+               <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+           <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="1million.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>1MILLION</p>
+                <P>PRIX:180$</P>
+            <P>#USSD#/HTTPS/WEITT/homme</P>
+             <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+          
+            <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="Rose.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>ROSE</p>
+                <P>PRIX:150$</P>
+                <P>#USSD#/HTTPS/WEITT/enfant</P>
+                 <button class="ach">Achat en ligne</button>
+                 
+            </div>
+           </Div>
+            <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="Wei.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>WEI</p>
+                <P>PRIX:190$</P>
+          <P>#USSD#/HTTPS/WEITT/femme</P>
+           <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+            <Div class="PRODUI">
+          
+          <div class="imjprodui">
+            <img class="imjcha" src="colombe.png" alt="">
+          </div>
+            <div class="paragraf">
+                <p>colombe</p>
+                <P>PRIX:150$</P>
+             <P>#USSD#/HTTPS/WEITT/enfant</P>
+              <button class="ach">Achat en ligne</button>
+            </div>
+           </Div>
+                
+           
+       </div>
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div> 
+</body>
+</html>
